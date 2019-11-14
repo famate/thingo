@@ -14,4 +14,4 @@ def cliente(request):
                 form.save()
                 return redirect('url_principal')
         else:
-                return render(request, 'form_cliente.html')
+                return render(request, 'form_cliente.html' , {'form':form} )
