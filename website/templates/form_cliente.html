@@ -5,9 +5,13 @@
 
 <body>
 	<h1> Cadastro clientes </h1>
-	<form method="post" enctype="multipart/form-data">
+    
+	<form method="post" >
             {% csrf_token %}
             {{ form.as_p }}
+
             <button onclick="submit">Salvar</button>
+            
 	</form>
+            
 </body>
