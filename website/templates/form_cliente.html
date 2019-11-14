@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+	<title>Thingo</title>
+</head>
+
+<body>
+	<h1> Cadastro clientes </h1>
+	<form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button onclick="submit">Salvar</button>
+	</form>
+</body>
